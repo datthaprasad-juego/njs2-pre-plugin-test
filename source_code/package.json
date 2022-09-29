@@ -1,0 +1,30 @@
+{
+  "name": "source_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "njs2-type": "project",
+  "devDependencies": {
+    "serverless-offline": "^7.0.0",
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "nodemon": "^2.0.12",
+    "prettier": "2.0.5",
+    "serverless-prune-plugin": "^1.5.1"
+  },
+  "dependencies": {
+    "@njs2/base": "git+https://github.com/Njs2/njs2-base.git#main",
+    "@njs2/sql": "git+https://github.com/Njs2/njs2-sql.git",
+    "njs2-match-random": "file:njs2_modules/njs2-match-random"
+  }
+}

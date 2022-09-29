@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_postman_id": "source_code",
+    "name": "source_code",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "joinRandomRoom",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "enc_state",
+            "value": "1",
+            "disabled": true,
+            "description": "Encryption status: 1- Enable, 2- Disable",
+            "type": "text"
+          },
+          {
+            "key": "lng_key",
+            "value": "en",
+            "disabled": true,
+            "description": "Langauage key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/joinRandomRoom",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "joinRandomRoom"
+          ]
+        },
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "room_type",
+              "value": "",
+              "disabled": false,
+              "description": "It depends on developer, For ex: 1- No condition, 2- Country Matching, 3- International Matching, 4- Bid Matching, so on...",
+              "type": "text"
+            },
+            {
+              "key": "match_making_condition",
+              "value": {},
+              "disabled": true,
+              "description": "object of conditions",
+              "type": "text"
+            },
+            {
+              "key": "data",
+              "value": "",
+              "disabled": true,
+              "description": "Encrypted data and url encode(URLSearchParams) the encrypted data to handle special characters",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "match-random/join",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "enc_state",
+            "value": "1",
+            "disabled": true,
+            "description": "Encryption status: 1- Enable, 2- Disable",
+            "type": "text"
+          },
+          {
+            "key": "lng_key",
+            "value": "en",
+            "disabled": true,
+            "description": "Langauage key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/match-random/join",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "match-random",
+            "join"
+          ]
+        },
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "room_type",
+              "value": "",
+              "disabled": false,
+              "description": "It depends on developer, For ex 1- No condition, 2- Country Matching, 3- International Matching, 4- Bid Matching, so on...",
+              "type": "text"
+            },
+            {
+              "key": "data",
+              "value": "",
+              "disabled": true,
+              "description": "Encrypted data and url encode(URLSearchParams) the encrypted data to handle special characters",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
